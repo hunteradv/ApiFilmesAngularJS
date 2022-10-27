@@ -1,7 +1,7 @@
 //module
 angular.module('Curso', []).run(function ($rootScope) {
     $rootScope.titulo = 'Curso';
-    $rootScope.nome = 'Roger';
+    $rootScope.nome = 'X';
 })
 
 //service
@@ -36,7 +36,7 @@ angular.module('Curso', []).run(function ($rootScope) {
 
     ctrl.titulo = 'Encontre seu filme';
     ctrl.textBusca = null;
-    
+
     ctrl.Buscar = function() {
         BuscaFilmeApi.BuscarFilme(ctrl.textBusca).then(function(oFilme) {
             ctrl.filmes = oFilme;
